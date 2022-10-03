@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LineStyle } from '@progress/kendo-angular-charts';
 
 @Component({
   selector: 'app-area-chart',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-chart.component.css']
 })
 export class AreaChartComponent implements OnInit {
+
+  // categories=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
+
+  public style: LineStyle = "normal";
 
   categories=['Jan', 'Feb', 'Mar', 'Apr'];
 

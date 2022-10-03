@@ -10,12 +10,11 @@ import { LineChartComponent } from './Charts/line-chart/line-chart.component';
 const routes: Routes = [
   {path:'', component:HomeComponent},
   {path:'tables', component:KendoGridComponent},
-  {path:'charts', component:ChartsComponent,
-  children:[
-    {path:'area', component:AreaChartComponent,pathMatch:'full'},
-    {path:'bar', component:BarChartComponent,pathMatch:'full'},
-    {path:'line', component:LineChartComponent,pathMatch:'full'},
-  ]},
+  {path:'charts', component:ChartsComponent},
+  {path:'area-chart', component:AreaChartComponent,pathMatch:'full'},
+  {path:'bar-chart', component:BarChartComponent,pathMatch:'full'},
+  {path:'line-chart', component:LineChartComponent,pathMatch:'full'},
+ 
 
 
 ];

@@ -17,6 +17,8 @@ body {
   }
   li {
     margin: 0 9px;
+    text-decoration: none;
+
   }
   li:hover {
     cursor: pointer;

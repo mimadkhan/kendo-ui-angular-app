@@ -22,10 +22,11 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
 import { IndicatorsModule } from '@progress/kendo-angular-indicators';
 import { CommonModule } from '@angular/common';
 import { RatingComponent } from './rating/rating.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MenusModule } from '@progress/kendo-angular-menu';
+import { FormsModule } from '@angular/forms';
 
 import "hammerjs";
-import { MenusModule } from '@progress/kendo-angular-menu';
-
 
 
 @NgModule({
@@ -42,6 +43,8 @@ import { MenusModule } from '@progress/kendo-angular-menu';
   imports: [
     BrowserModule,
     CommonModule,
+    FormsModule,
+    HttpClientModule,
     AppRoutingModule,
     ChartsModule,
     DateInputsModule,
