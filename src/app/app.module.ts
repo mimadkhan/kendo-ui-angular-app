@@ -24,10 +24,17 @@ import { CommonModule } from '@angular/common';
 import { RatingComponent } from './rating/rating.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MenusModule } from '@progress/kendo-angular-menu';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TreeViewModule } from '@progress/kendo-angular-treeview';
 import "hammerjs";
-
+import { TreeCheckListComponent } from './tree-check-list/tree-check-list.component';
+import { MatTreeModule } from '@angular/material/tree';
+import {MatIconModule} from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -38,11 +45,14 @@ import "hammerjs";
     AreaChartComponent,
     BarChartComponent,
     LineChartComponent,
-    RatingComponent
+    RatingComponent,
+    // TreeCheckListComponent,
+    TreeCheckListComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
+    ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
@@ -60,6 +70,17 @@ import "hammerjs";
     ButtonsModule,
     PDFModule,
     ExcelModule,
+    TreeViewModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatTreeModule,
+    MatInputModule,
+    MatButtonModule
     
   ],
   providers: [ProductService],
